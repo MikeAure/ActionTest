@@ -35,16 +35,7 @@ jobs:
           brew untap homebrew/cask
           brew untap homebrew/core
           brew cleanup
-          brew uses --installed openssl@1.1
-          brew doctor
           brew update
-          brew uninstall --ignore-dependencies node
-          brew install node@18
-          brew link --overwrite node@18
-          brew uninstall --ignore-dependencies python
-          brew install python@3.11
-          brew link --overwrite python@3.11
-          brew doctor
           brew upgrade
           brew services start postgresql
           brew install mariadb@10.5 sqlite
